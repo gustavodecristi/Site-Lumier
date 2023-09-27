@@ -1,0 +1,15 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    height: 60px;
+    width: 200px;
+}
+
+.noise {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent), url('./botao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
