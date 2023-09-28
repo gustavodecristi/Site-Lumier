@@ -1,15 +1,37 @@
-body{
-    padding: 0;
-    margin: 0;
+* { margin: 0; padding: 0; }
+
+
+.logo{
+    float: left;
+    height: 50px;
 }
 
-div{
-    height: 60px;
-    width: 200px;
+/* Estilos da barra de navegação */
+.navbar {
+    background-color: rgb(255, 170, 18); /* Cor de fundo da navbar */
+    display: flex;
+    justify-content: space-between; /* Espaçamento uniforme dos itens na navbar */
+    align-items: center;
 }
 
-.noise {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent), url('./botao.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Espaçamento uniforme dos itens na navbar */
+    align-items: center;
+    height: 50px; /* Altura da navbar */
 }
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    font-weight: bold;
+    padding: 10px 15px; /* Espaçamento interno para cada item */
+    transition: background-color 0.3s; /* Transição de cor de fundo ao passar o mouse */
+}
+
+.nav-item a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+
