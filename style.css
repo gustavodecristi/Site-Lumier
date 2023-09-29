@@ -3,7 +3,8 @@
 
 .logo{
     float: left;
-    height: 50px;
+    height: 73px;
+    margin-left: 118px;
 }
 
 /* Estilos da barra de navegação */
@@ -12,6 +13,8 @@
     display: flex;
     justify-content: space-between; /* Espaçamento uniforme dos itens na navbar */
     align-items: center;
+    height: 107px; /* Altura da navbar */
+
 }
 
 .nav-list {
@@ -19,7 +22,6 @@
     display: flex;
     justify-content: center; /* Espaçamento uniforme dos itens na navbar */
     align-items: center;
-    height: 50px; /* Altura da navbar */
 }
 
 .nav-item a {
@@ -33,5 +35,23 @@
 .nav-item a:hover {
     background-color: #555; /* Cor de fundo ao passar o mouse */
 }
+
+
+.button{
+    padding: 10px 33px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-right: 120px;
+}
+
+.button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.button a:visited{
+    color: #fff;
+}
+
 
 
