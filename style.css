@@ -1,26 +1,27 @@
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0; } /* Zerando atributos pré-definidos*/
 
+
+
+/* Estilos da barra de navegação */
 
 .logo{
     float: left;
-    height: 73px;
-    margin-left: 118px;
+    height: 8vh;
+    margin-left: 6.25vw;
 }
 
-/* Estilos da barra de navegação */
 .navbar {
     background-color: rgb(255, 170, 18); /* Cor de fundo da navbar */
     display: flex;
-    justify-content: space-between; /* Espaçamento uniforme dos itens na navbar */
+    justify-content: space-between; /* Espaçamento dos itens na navbar */
     align-items: center;
-    height: 107px; /* Altura da navbar */
-
+    height: 11.25vh; /* Altura da navbar */
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    justify-content: center; /* Espaçamento uniforme dos itens na navbar */
+    justify-content: center; /* Espaçamento uniforme das opções na navbar */
     align-items: center;
 }
 
@@ -35,7 +36,6 @@
 .nav-item a:hover {
     background-color: #555; /* Cor de fundo ao passar o mouse */
 }
-
 
 .button{
     padding: 10px 33px;
@@ -55,3 +55,31 @@
 
 
 
+/* Estilos da main */
+.ref{
+    visibility: hidden;
+}
+
+#principal{
+    background-image: url("./imagens/main/aquarela.png"); /* DIMINUIR TAMANHO DO ARQUIVO */
+    background-repeat: no-repeat;
+    height: 100vw;
+    background-size: 47vw;
+    background-position-x: -5vw;
+    background-position-y: -9vw;
+
+}
+
+#barra{
+    height: 6vw;
+    background: rgb(221, 198, 45);
+    background-image: linear-gradient(45deg, rgba(224, 198, 28, 0.65) 26%, rgba(211, 35, 123, 0.7) 64%), url("./noise.svg");
+    margin-top: 32vw;
+}
+
+#lampada{
+    height: 42vw;
+    position: absolute;
+    margin-top: -4.3vh;
+    margin-left: 3vw;
+}

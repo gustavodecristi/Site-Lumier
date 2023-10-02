@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Animação</title>
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        img {
+            transition: transform 0.3s ease-in-out;
+            animation: spin 2s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <img src="sua-imagem.jpg" alt="Imagem animada" onclick="animateImage(this)">
+
+    <script>
+        function animateImage(imgElement) {
+            imgElement.style.transform = "scale(1.2)";
+            setTimeout(function() {
+                imgElement.style.transform = "scale(1)";
+            }, 3000); // Redefine a escala após 3 segundos
+        }
+    </script>
+</body>
+</html>
