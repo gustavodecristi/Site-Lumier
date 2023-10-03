@@ -116,6 +116,7 @@ a:visited{
 .divDireita{
     float: right;
     margin-right: 8vw;
+    width: 65vw;
 }
 
 #main-title{
