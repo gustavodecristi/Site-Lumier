@@ -1,17 +1,45 @@
-* { margin: 0; padding: 0; } /* Zerando atributos pré-definidos*/
+/* Zerando atributos pré-definidos*/
+* { margin: 0; padding: 0; }
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--color-white);
+}
+
+
+:root {
+    --color-primary: rgb(255, 170, 18);
+    --color-black: #000;
+    --color-white: #FFF;
+}
+
+
+/* Definindo as fontes */
+.titulo{
+    font-family: "Poppins", sans-serif;
+}
+.corpo{
+    font-family: "Montserrat", sans-serif;
+}
 
 
 
 /* Estilos da barra de navegação */
 
-.logo{
+/* Logo da Lumi na navbar */
+.nav-logo{
     float: left;
     height: 8vh;
     margin-left: 6.25vw;
 }
 
+
+/* Itens da navbar */
 .navbar {
-    background-color: rgb(255, 170, 18); /* Cor de fundo da navbar */
+    background-color: var(--color-primary); /* Cor de fundo da navbar */
     display: flex;
     justify-content: space-between; /* Espaçamento dos itens na navbar */
     align-items: center;
@@ -27,7 +55,7 @@
 
 .nav-item a {
     text-decoration: none;
-    color: #fff; /* Cor do texto */
+    color: var(--color-white); /* Cor do texto */
     font-weight: bold;
     padding: 10px 15px; /* Espaçamento interno para cada item */
     transition: background-color 0.3s; /* Transição de cor de fundo ao passar o mouse */
@@ -37,33 +65,34 @@
     background-color: #555; /* Cor de fundo ao passar o mouse */
 }
 
-.button{
+
+/* Botão direito da navbar */
+.nav-button{
     padding: 10px 33px;
-    border: 2px solid #fff;
+    border: 2px solid var(--color-white);
     border-radius: 20px;
     margin-right: 120px;
 }
 
-.button a{
-    text-decoration: none;
-    color: #fff;
+.nav-button a{
+    color: var(--color-white);
 }
 
-.button a:visited{
-    color: #fff;
+.nav-button a:visited{
+    color: var(--color-white);
 }
+
 
 
 
 /* Estilos da main */
 .ref{
-    visibility: hidden;
+    visibility: hidden; /* Serve como âncora para posicionar a barra colorida */
 }
 
 #principal{
-    background-image: url("./imagens/main/aquarela.png"); /* DIMINUIR TAMANHO DO ARQUIVO */
+    background-image: url("./imagens/main/aquarela.png");
     background-repeat: no-repeat;
-    height: 100vw;
     background-size: 47vw;
     background-position-x: -5vw;
     background-position-y: -9vw;
@@ -82,4 +111,29 @@
     position: absolute;
     margin-top: -4.3vh;
     margin-left: 3vw;
+}
+
+.divDireita{
+    float: right;
+    margin-right: 8vw;
+}
+
+#main-title{
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 800;
+    line-height: 5vw;
+    margin-top: 6vw;
+}
+
+#main-subtitle{
+    font-weight: 400;
+    margin-top: 2vw;
+}
+
+#main-button{
+    padding: 15px 20px;
+    border-radius: 24px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
 }

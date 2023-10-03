@@ -1,30 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Exemplo de Animação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
-        img {
-            transition: transform 0.3s ease-in-out;
-            animation: spin 2s linear infinite;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ff6600;
+        }
+
+        .btn {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+            }
+
+            .navbar.show {
+                display: flex;
+            }
+
+            .navbar li {
+                margin-right: 0;
+                text-align: center;
+                padding: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="sua-imagem.jpg" alt="Imagem animada" onclick="animateImage(this)">
+    <header>
+        <div class="logo">Logo</div>
+        <ul class="navbar">
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+            <li><a href="#">Opção 6</a></li>
+            <li><a href="#">Opção 7</a></li>
+        </ul>
+        <button class="btn">Botão</button>
+    </header>
 
     <script>
-        function animateImage(imgElement) {
-            imgElement.style.transform = "scale(1.2)";
-            setTimeout(function() {
-                imgElement.style.transform = "scale(1)";
-            }, 3000); // Redefine a escala após 3 segundos
-        }
+        const navbar = document.querySelector('.navbar');
+        const btn = document.querySelector('.btn');
+
+        btn.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+        });
     </script>
 </body>
 </html>
