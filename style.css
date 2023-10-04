@@ -1,5 +1,5 @@
 /* Zerando atributos pré-definidos*/
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0;}
 
 a {
     text-decoration: none;
@@ -10,11 +10,14 @@ a:visited{
 }
 
 
+
+/* Variáveis de cores */
 :root {
     --color-primary: rgb(255, 170, 18);
     --color-black: #000;
     --color-white: #FFF;
 }
+
 
 
 /* Definindo as fontes */
@@ -28,41 +31,47 @@ a:visited{
 
 
 /* Estilos da barra de navegação */
+.navbar {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5vw;
+}
+
 
 /* Logo da Lumi na navbar */
 .nav-logo{
     float: left;
-    height: 8vh;
+    width: 4vw;
     margin-left: 6.25vw;
 }
 
 
 /* Itens da navbar */
-.navbar {
-    background-color: var(--color-primary); /* Cor de fundo da navbar */
-    display: flex;
-    justify-content: space-between; /* Espaçamento dos itens na navbar */
-    align-items: center;
-    height: 11.25vh; /* Altura da navbar */
-}
-
 .nav-list {
     list-style: none;
     display: flex;
-    justify-content: center; /* Espaçamento uniforme das opções na navbar */
+    justify-content: center;
     align-items: center;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: var(--color-white); /* Cor do texto */
+    color: var(--color-white);
     font-weight: bold;
-    padding: 10px 15px; /* Espaçamento interno para cada item */
+    font-size: 1vw;
+    white-space: nowrap;
+    padding: 10px 15px;
     transition: background-color 0.3s; /* Transição de cor de fundo ao passar o mouse */
 }
 
 .nav-item a:hover {
     background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+.espacamento{
+    margin-left: 2vw;
 }
 
 
@@ -85,25 +94,18 @@ a:visited{
 
 
 
-/* Estilos da main */
+
+/* Estilos da section */
 .ref{
     visibility: hidden; /* Serve como âncora para posicionar a barra colorida */
 }
 
 #principal{
-    background-image: url("./imagens/main/aquarela.png");
+    background-image: url("./imagens/header/aquarela.png");
     background-repeat: no-repeat;
     background-size: 47vw;
     background-position-x: -5vw;
     background-position-y: -9vw;
-
-}
-
-#barra{
-    height: 6vw;
-    background: rgb(221, 198, 45);
-    background-image: linear-gradient(45deg, rgba(224, 198, 28, 0.65) 26%, rgba(211, 35, 123, 0.7) 64%), url("./imagens/main/noise.svg");
-    margin-top: 32vw;
 }
 
 #lampada{
@@ -115,24 +117,52 @@ a:visited{
 
 .divDireita{
     float: right;
-    width: 65vw;
+    width: 70vw;
+    margin-top: 6vw;
+    margin-right: 5vw;
 }
 
-#main-title{
+#section-title{
     text-align: center;
-    font-size: 2vw;
+    font-weight: 800;
+    font-size: 3.5vw;
+    line-height: 5vw;
 }
 
-#main-subtitle{
-    text-align: center;
-    font-size: 2vw;
+.divDireita img{
+    position: absolute;
+    width: 24vw;
+    margin-top: -4.3vw;
+    margin-left: 36.75vw;
+    z-index: -1;
 }
 
-#main-button{
+#section-subtitle{
     text-align: center;
+    font-size: 1.3vw;
+    font-weight: 400;
+    margin-top: 2vw;
+}
+
+#section-button{
+    text-align: center;
+    margin-top: 5vw;
+}
+
+#section-button button{
     background-color: var(--color-primary);
-    width: 600px;
-    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+    padding: 1.5vw 1.5vw;
+    border-radius: 2vw;
+    color: var(--color-white);
+    font-size: 1vw;
+    font-weight: 700;
 }
 
-
+#barra{
+    height: 6vw;
+    background: rgb(221, 198, 45);
+    background-image: linear-gradient(45deg, rgba(224, 198, 28, 0.65) 26%, rgba(211, 35, 123, 0.7) 64%), url("./imagens/header/noise.svg");
+    margin-top: 32vw;
+}
