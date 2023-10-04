@@ -115,26 +115,24 @@ a:visited{
 
 .divDireita{
     float: right;
-    margin-right: 8vw;
     width: 65vw;
 }
 
 #main-title{
     text-align: center;
-    font-size: 4vw;
-    font-weight: 800;
-    line-height: 5vw;
-    margin-top: 6vw;
+    font-size: 2vw;
 }
 
 #main-subtitle{
-    font-weight: 400;
-    margin-top: 2vw;
+    text-align: center;
+    font-size: 2vw;
 }
 
 #main-button{
-    padding: 15px 20px;
-    border-radius: 24px;
-    color: var(--color-white);
+    text-align: center;
     background-color: var(--color-primary);
+    width: 600px;
+    margin: 10px auto;
 }
+
+
