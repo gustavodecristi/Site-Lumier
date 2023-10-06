@@ -1,5 +1,0 @@
-div {
-    height: 60px;
-    background: rgb(221, 198, 45);
-    background-image: linear-gradient(45deg, rgba(224, 198, 28, 0.65) 26%, rgba(211, 35, 123, 0.7) 64%), url("./noise.svg");
-}
