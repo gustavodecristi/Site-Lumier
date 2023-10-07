@@ -208,6 +208,23 @@ a:visited{
 }
 
 
+#texto-apresentacao h1{
+    margin-top: 4vw;
+    line-height: 3vw;
+    font-size: 2.5vw;
+}
+
+#texto-apresentacao span{
+    font-size: 3.3vw;
+}
+
+#texto-apresentacao p{
+    text-align: justify;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    margin-right: 4vw;
+}
+
 
 
 #teste{
