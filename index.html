@@ -16,29 +16,29 @@
 </head>
 
 <body>
-    <header>
+    <header> <!--Header da página, ele vai da navbar no topo até a barra colorida após o desenho grande da lâmpada-->
         <nav class="navbar">
-            <img src="./imagens/header/logo.png" alt="Logo Lumier" class="nav-logo">
-            <ul class="nav-list titulo">
+            <img src="./imagens/header/logo.png" alt="Logo Lumier" class="nav-logo"> <!--Logo da Lumier na navbar-->
+            <ul class="nav-list titulo"> <!--Itens da navbar-->
                 <li class="nav-item"><a href="#">HOME</a></li>
-                <li class="nav-item espacamento"><a href="#">QUEM SOMOS</a></li>
+                <li class="nav-item espacamento"><a href="#">QUEM SOMOS</a></li>    <!--!A classe "espaçamento" serve para dar distância entre os itens da navbar, sem afetar o primeiro item a esquerda-->
                 <li class="nav-item espacamento"><a href="#">SERVIÇOS</a></li>
                 <li class="nav-item espacamento"><a href="#">CLIENTES</a></li>
                 <li class="nav-item espacamento"><a href="#">CERTIFICAÇÕES</a></li>
                 <li class="nav-item espacamento"><a href="#">FEEDBACK</a></li>
                 <li class="nav-item espacamento"><a href="#">ORÇAMENTO</a></li>
             </ul>
-            <div class="nav-button corpo"><a href="">Clique na lâmpada</a></div>
+            <div class="nav-button corpo"><a href="">Clique na lâmpada</a></div> <!--!Botão da navbar, precisa ser ajustado usando a tag BUTTON-->
         </nav>
 
-        <section id="principal">
-            <div class="ref">Elemento de referência</div>
+        <section id="principal"> <!--Section que contém o título principal com a lâmpada aquarela-->
+            <div class="ref">Elemento de referência</div> <!--!Esse elemento fica invisível e serve apenas como um âncora para a margem do restante da section-->
+
             <div>
-                <img src="./imagens/header/lampada.png" alt="Lâmpada colorida" id="lampada">
+                <img src="./imagens/header/lampada.png" alt="Lâmpada colorida" id="lampada"> <!--Imagem da lâmpada aquarela-->
             </div>
-
-            <div class="divDireita">
-
+            
+            <div class="divDireita"> <!--Div onde está a informação escrita que flutua ao lado do desenho da lâmpada-->
                 <div>
                     <h1 class="titulo" id="section-title">GRANDES CONQUISTAS<br>PRECISAM DE ESTRATÉGIA!</h1>
                     <img src="./imagens/header/setaAmarela.png" alt="">
@@ -51,14 +51,13 @@
                 <div id="section-button">
                     <button class="corpo">Quero conquistar grandes resultados</button>
                 </div>
-
             </div>
 
             <div id="barra"></div>
         </section>
     </header>
     
-    <main>
+    <main> <!--Parte principal que contém números da agência, apresentação, serviços e itens a serem trabalhados-->
         <section>
             <div>
                 <ul class="cartela-clientes corpo">
@@ -101,26 +100,34 @@
             </div>
         </section>
 
-        <section>
+        <section id="servicos">
             <h1 class="titulo">COMO QUE A LUMI PODE<br>SALVAR A SUA EMPRESA?</h1> <!--! Corrigir ortografia -->
 
-            <p>
+            <p class="corpo">
                 Na Lumi oferecemos todos os serviços que você precisa para obter sucesso 
                 com no mundo on-line e offline.<br>
                 Trabalhamos intensamente o branding da marca, a fim de aumentar ainda 
                 mais as vendas e percepção do<br>público diante a sua empresa.
             </p>
+
+            <div class="lista-servicos titulo">
+                <div class="item-servico">MENTORIA ESTRATÉGICA</div>
+                <div class="item-servico">GESTÃO ESTRATÉGICA<br>DAS MÍDIAS SOCIAIS</div>
+                <div class="item-servico">CURADORIA DE CONTEÚDO</div>
+                <div class="item-servico">BRANDING (GESTÃO<br>DE MARCA)</div>
+                <div class="item-servico">LIVE MARKETING</div>
+                <div class="item-servico">DESENVOLVIMENTO WEB</div>
+                <div class="item-servico">ANÁLISE DE COMUNICAÇÃO</div>
+                <div class="item-servico">PRODUÇÃO DE FOTOS<br>E VÍDEOS</div>
+            </div>
+
+            <div id="main-button">
+                <button class="corpo">Quero conquistar grandes resultados</button>
+            </div>        
         </section>
 
-
-
-
-
         <section id="teste"></section>
-
-
     </main>
-
 
 
 </body>

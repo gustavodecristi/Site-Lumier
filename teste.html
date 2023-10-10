@@ -1,104 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Serviços</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
+        .servicos {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .navbar {
+        .servico {
+            flex: 1;
+            max-width: calc(25% - 20px); /* 4 colunas com espaçamento entre elas */
+            margin: 10px;
+            text-align: center;
             display: flex;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+            flex-direction: column;
         }
 
-        .navbar li {
-            margin-right: 20px;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: #fff;
-            transition: color 0.3s;
-        }
-
-        .navbar a:hover {
-            color: #ff6600;
-        }
-
-        .btn {
-            background-color: #ff6600;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            .navbar {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 50px;
-                left: 0;
-                background-color: #333;
-                width: 100%;
-            }
-
-            .navbar.show {
-                display: flex;
-            }
-
-            .navbar li {
-                margin-right: 0;
-                text-align: center;
-                padding: 10px 0;
-            }
+        button {
+            flex: 1;
+            width: 100%;
+            white-space: normal;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Logo</div>
-        <ul class="navbar">
-            <li><a href="#">Opção 1</a></li>
-            <li><a href="#">Opção 2</a></li>
-            <li><a href="#">Opção 3</a></li>
-            <li><a href="#">Opção 4</a></li>
-            <li><a href="#">Opção 5</a></li>
-            <li><a href="#">Opção 6</a></li>
-            <li><a href="#">Opção 7</a></li>
-        </ul>
-        <button class="btn">Botão</button>
-    </header>
-
-    <script>
-        const navbar = document.querySelector('.navbar');
-        const btn = document.querySelector('.btn');
-
-        btn.addEventListener('click', () => {
-            navbar.classList.toggle('show');
-        });
-    </script>
+    <div class="servicos">
+        <div class="servico">
+            <button>Nome do Serviço 1</button>
+        </div>
+        <div class="servico">
+            <button>Nome do Serviço 2</button>
+        </div>
+        <div class="servico">
+            <button>Nome do Serviço 3 com um Nome Muito Longo</button>
+        </div>
+        <div class="servico">
+            <button>Nome do Serviço 4</button>
+        </div>
+        <div class="servico">
+            <button>Nome do Serviço 5</button>
+        </div>
+        <div class="servico">
+            <button>Nome do Serviço 6</button>
+        </div>
+        <div class="servico">
+            <button>Nome do Serviço 7 com um Nome Muito Longo</button>
+        </div>
+        <div class="servico">
+            <button>Nome do Serviço 8</button>
+        </div>
+    </div>
 </body>
 </html>

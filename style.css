@@ -4,11 +4,9 @@
 a {
     text-decoration: none;
 }
-
 a:visited{
     color: var(--color-white);
 }
-
 
 
 /* Variáveis de cores */
@@ -19,7 +17,6 @@ a:visited{
     --color-roxo: rgba(211,35,123,1);
     --color-amarelo: rgba(225,199,39,1);
 }
-
 
 
 /* Definindo as fontes */
@@ -36,7 +33,7 @@ a:visited{
 .navbar {
     background-color: var(--color-primary);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /**Deixa o espaçamento ideal entre a logo, os itens e o botão*/
     align-items: center;
     height: 5.5vw;
 }
@@ -49,7 +46,6 @@ a:visited{
     margin-left: 5vw;
 }
 
-
 /* Itens da navbar */
 .nav-list {
     list-style: none;
@@ -58,7 +54,7 @@ a:visited{
     align-items: center;
 }
 
-.nav-item a {
+.nav-item a { /*TODO: Refazer botões para que fiquem com medidas responsivas*/
     text-decoration: none;
     color: var(--color-white);
     font-weight: bold;
@@ -68,11 +64,11 @@ a:visited{
     transition: background-color 0.3s; /* Transição de cor de fundo ao passar o mouse */
 }
 
-.nav-item a:hover {
+.nav-item a:hover { /*! Alterar cor*/
     background-color: #555; /* Cor de fundo ao passar o mouse */
 }
 
-.espacamento{
+.espacamento{ /**O espaçamento entre as opçoes da navbar*/
     margin-left: 2vw;
 }
 
@@ -97,15 +93,13 @@ a:visited{
 
 
 
-
-
 /* Estilos da section */
 .ref{
-    visibility: hidden; /* Serve como âncora para posicionar a barra colorida */
+    visibility: hidden; /*! Serve como âncora para posicionar os itens da section */
 }
 
 #principal{
-    background-image: url("./imagens/header/aquarela.png");
+    background-image: url("./imagens/header/aquarela.png"); /*Aquarela que fica atrás da lâmpada*/
     background-repeat: no-repeat;
     background-size: 47vw;
     background-position-x: -5vw;
@@ -114,7 +108,7 @@ a:visited{
 
 #lampada{
     height: 42vw;
-    position: absolute;
+    position: absolute; /**Serve para deixar a lâmpada acima dos outros elementos*/
     margin-top: -4.3vh;
     margin-left: 3vw;
 }
@@ -225,6 +219,67 @@ a:visited{
     margin-right: 4vw;
 }
 
+
+
+#servicos{
+    margin-top: 10vw;
+    margin-left: 5vw;
+}
+
+#servicos h1{
+    font-size: 3.5vw;
+    font-weight: 800;
+    line-height: 4.5vw;
+}
+
+#servicos p{
+    margin-top: 1.5vw;
+    margin-left: 0.1vw;
+    font-size: 1.5vw;
+}
+
+
+.lista-servicos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 6vw;
+    margin-right: 4.5vw;
+    margin-top: 5vw;
+}
+
+.item-servico{
+    background: rgb(225,199,39);
+    background: linear-gradient(45deg, rgba(225,199,39,1) 26%, var(--color-roxo) 64%);
+    border-radius: 2vw;
+    height: 4vw;
+    width: 19vw;
+    color: var(--color-white);
+    text-align: center;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+#main-button{
+    text-align: center;
+    margin-top: 6vw;
+    margin-right: 7.8vw;
+}
+
+
+#servicos button{
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+    padding: 1vw 4vw;
+    border-radius: 2vw;
+    color: var(--color-white);
+    font-size: 1.2vw;
+    font-weight: 700;
+}
 
 
 #teste{
